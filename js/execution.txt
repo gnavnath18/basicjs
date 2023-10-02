@@ -1,0 +1,30 @@
+execution contex of js 
+two phases global ec and functional ec 
+in start initalised global ec in this 
+then we move to local scope functional scope 
+then we take all variables and store in stack with undefined 
+if function is there we store with its definition 
+
+eg 
+let a=10 
+let b=29
+function addTwo(){
+    let c=f+g 
+    return c 
+}
+
+global-this
+
+2. memory ec 
+a-undefined 
+b-undefined 
+addTwo - let c=f+g 
+    return c
+
+3. execution contex 
+a=10
+b=29
+
+
+
+

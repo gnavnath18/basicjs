@@ -1,0 +1,67 @@
+ data object model
+ window=>document=>HTML=> head||body=>
+head=>meta||title
+
+===========DOM manipulation=================== 
+queryselectors -
+     getElenmentById(),getElementByClassname() ,querySelector(),querSelectorAll()
+
+ .innerHtml, .textcontent , .innertext   -[to acess content] && .first-child , last-child
+
+
+// nodelist and arraycollection <br><br>
+
+
+//+++++++++++++++++++++++++++++++++++ create,edit and remove element in dom++++++++++++++++++++++++++
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dom manipulation </title>
+</head>
+<body style="background-color: rgb(58, 43, 43)">
+     <div id="language">
+         <ul>
+          <li>javascipt </li>
+          <li>python </li>
+          <li>cpp</li>
+          <li>rust</li>
+          <li>java</li>
+
+          </ul>
+
+     </div>
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<script>
+     function addele(langname)  {
+          let li =document.createElement('li');
+          li.innerHTML=`${langname}`;
+          document.querySelector('#language').appendChild(li);
+
+}
+addele("golang");
+document.querySelector('#language').firstChild(li).remove();
+
+
+
+
+
+</script>
+
++++++++++++++++++++++++[edit element] ++++++++++++++++++++++++++++++ 
+
+
+++++++++++++++++++++++++[remove ()]+++++++++++++++++++++++++++++++++
